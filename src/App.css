@@ -51,13 +51,3 @@
   margin-top: -21px;
 
 }
-.greeting{
-  font-size: 2em;
-  margin-top: 30px;
-  display: inline-block;
-  padding: 3em;
-  border: 2px solid black;
-  border-radius: 2%;
-  font-family:'Bebas Neue', cursive; 
-  margin-left: 400px;
-}

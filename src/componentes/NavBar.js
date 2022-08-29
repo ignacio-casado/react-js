@@ -2,6 +2,7 @@ import React from 'react';
 import imagenes from '../assets/imagenes';
 import CartWidget from '../componentes/CartWidget'
 
+
 const NavBar = (props) =>{
     return(
      <>
@@ -38,7 +39,7 @@ const NavBar = (props) =>{
           </ul>
         </li>
         <li className="nav-item">
-        <a className="nav-link disabled"><CartWidget numero="2"/></a>
+        <a className="nav-link disabled"><CartWidget /></a> 
         </li>
       </ul>
       <form className="d-flex" role="search">
