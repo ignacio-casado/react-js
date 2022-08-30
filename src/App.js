@@ -11,18 +11,7 @@ const App = () =>{
     <>
       < NavBar />
       <ItemListContainer/>
-      {
-        Product.map(item =>(
-          <ItemCount 
-          id={item.id}
-          image={item.image}
-          name={item.name}
-          stock={item.stock}
-          categoryID={item.categoryID}
-          />
-        )) 
-
-      }
+      
       
 
     </>

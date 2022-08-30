@@ -7,11 +7,7 @@ const CartWidget = (props) =>{
             <img src={imagenes.img3} className="fotoCarrito" />
            
         </div>
-        <div>
-            <p className="contadorCarrito">
-                {props.numero}
-            </p>
-        </div>
+        
         
         </>
     );

@@ -3,6 +3,7 @@ import imagenes from '../assets/imagenes';
 import CartWidget from '../componentes/CartWidget'
 
 
+
 const NavBar = (props) =>{
     return(
      <>

@@ -11,6 +11,6 @@ export default {
     "img2": backround,
     "img3": logoCarrito,
     "img4": nikeJordanUno,
-    "img4":nikeJordanLow,
-    "img5":nikeJordanRetro,
+    "img5":nikeJordanLow,
+    "img6":nikeJordanRetro,
 }

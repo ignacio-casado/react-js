@@ -37,7 +37,7 @@
   height: auto;
   display: inline;
   margin-left: 1200px;
-  margin-top: -90px;
+  margin-top: -70px;
   
 }
 .fotoCarrito{
@@ -50,4 +50,40 @@
   margin-bottom: -24px;
   margin-top: -21px;
 
+}
+.imgProduct{
+  width: 300px;
+  height: auto;
+}
+.propiedadesProduct{
+  padding: 30px;
+}
+.divProduct{
+  margin-top: 50px;
+  margin-left: 100px;
+  
+}
+.col h3{
+  font-family:'Bebas Neue', cursive ;
+}
+.containertext-center{
+  margin-top: 40px;
+}
+.btnSumar{
+  margin-top: 20px;
+  margin-right: 20px;
+  border: 1px solid #ad6262;
+  border-radius: 3px;
+  padding: 8px;
+}
+.btnRestar{
+  margin-top: 20px;
+  margin-right: 20px;
+  border: 1px solid #ad6262;
+  border-radius: 3px;
+  padding: 8px;
+
+}
+.col{
+  margin-top: 40px;
 }
