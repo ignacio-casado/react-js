@@ -1,12 +1,15 @@
-import Product from "../utils/Product";
+
 import ItemCount from "./ItemCount";
+import Item from "./Item";
 
 const ItemListContainer = (props) =>{
 
  return(
     <>
     <div>
-    {Product.map(item =>(
+      <Item />
+      <ItemCount />
+     {/* {Product.map(item =>(
           <ItemCount 
           id={item.id}
           image={item.image}
@@ -15,7 +18,7 @@ const ItemListContainer = (props) =>{
           categoryID={item.categoryID}
           />
         )) 
-        }
+        }  */}
 
     </div>
     

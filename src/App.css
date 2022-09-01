@@ -63,7 +63,7 @@
   margin-left: 100px;
   
 }
-.col h3{
+.row h3{
   font-family:'Bebas Neue', cursive ;
 }
 .containertext-center{
@@ -84,6 +84,74 @@
   padding: 8px;
 
 }
+/* probando para desafio */
 .col{
   margin-top: 40px;
+}
+.row img{
+  margin-left:200px;
+}
+.row h3{
+  margin-left:200px;
+  font-family: 'Bebas Neue', cursive;
+
+}
+.row h4{
+  margin-left:200px;
+  
+}
+.row p{
+  margin-left:200px;
+}
+.row button{
+  margin-left:200px;
+}
+.row p{
+
+ 
+  margin-top: 20px;
+}
+.row h5{
+  margin-left:200px;
+}
+.vermasinformacion{
+  border: #ad6262;
+  text-align: center;
+  background-color: firebrick;
+  padding: 5px;
+  border-radius: 4px;
+  font-family: 'Bebas Neue', cursive;
+
+}
+.col-md-4{
+  flex-wrap: wrap-reverse;
+
+ 
+}
+.row{
+  flex-wrap: wrap;
+  text-align: center;
+
+  
+}
+.btnRestar{
+  padding-right: 50px;
+  padding-left: 50px;
+  font-size: x-large;
+}
+.btnSumar{
+  padding-right: 50px;
+  padding-left: 50px;
+  font-size: x-large;
+}
+.botonesC p {
+  padding-bottom: 50px;
+
+} 
+.container{
+  width: 300px;
+  height: auto;
+}
+.row .propiedadesProduct{
+  border-bottom: 1px dotted black ;
 }

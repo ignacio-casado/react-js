@@ -27,6 +27,16 @@ const Product = [
         positionID: "Jordan Retro",
 
     },
+    {
+        id:4,
+        image: [
+            "https://essential.vtexassets.com/arquivos/ids/571590/316-0414_1.jpg?v=637909172123500000",
+
+        ],
+        name: "Nike air force 1",
+        stock: 3,
+        positionID: "Force 1",
+    }
 ];
 
 
