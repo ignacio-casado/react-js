@@ -10,32 +10,21 @@ const ItemDetail = ({item}) =>{
 
     return(
         <>
-        {
+            <div className="Row">
             
-            
+                <h3 className="nameDetail">{item.name}</h3>
+                <img src={item.image} alt="imgDetail" />
+                <h4 className="stockDetail">Stock: {item.stock}</h4>
+                <p className="descriptionDetail">{item.description}</p>
+                <p> Categoria: {item.positionID} </p>
                
-                        {item.image} 
+                <h5 className="itemPriceDetail">${item.precio} usd</h5>
+                {/* <button className="vermasinformacion">Ver mas informacion</button> */}
+                <ItemCount />
                         
-                       
-                         {item.name}
-                       
-                        
-                        
-                            Stock: {item.stock}
-                     
-                       
-                            Categoria: {item.positionID} 
-                           
-                       
-                    
-                        <button className="vermasinformacion">Ver mas informacion</button>
-                        <ItemCount />
-                        
-                
-                    
-                    
             
-        }
+            </div>
+           
         </>
         
     );    

@@ -155,3 +155,47 @@
 .row .propiedadesProduct{
   border-bottom: 1px dotted black ;
 }
+
+/* item detai */
+.Row{
+  margin-left: 686px;
+  font-family:'Bebas Neue', cursive ;
+  margin-top: 50px;
+}
+.Row h4{
+margin-left: 159px;
+display: inline;
+font-size: 50px;
+}
+.Row h3{
+  font-size: xx-large;
+}
+.Row .vermasinformacion{
+  margin-left: 62px;;
+}
+.Row img{
+  width: 400px;
+  height: auto;
+}
+.descriptionDetail{
+  font-size: xx-large;
+}
+.itemPriceDetail h5{
+  display: inline;
+  font-size: 29px;
+  margin-left: 159px;
+}
+.Row p{
+  display:flex;
+}
+.carritoAdd{
+  padding-left: 116px;
+  padding-top: 34px;
+}
+
+.buy{
+  border: none;
+  font-size: 28px;
+  border-bottom: 2px solid black;
+  margin-right: 20px;
+}

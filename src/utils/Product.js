@@ -25,6 +25,8 @@ const Product = [
         name: "Nike air jordan 1 retro",
         stock: 7,
         positionID: "Jordan Retro",
+        description: "Unicas en estilo y onda....",
+        precio: 200,
 
     },
     {

@@ -7,7 +7,7 @@ const ItemDetailContainer = () =>{
     const [producto, setProducto] = useState({});
 
     useEffect(()=>{
-        promiseItem(2000, Product[2])
+        promiseItem(Product[2], 2000 )
             .then(result => setProducto(result))
             .catch(err => console.log(err))
     },[])
