@@ -1,11 +1,12 @@
-/* import Product from "../utils/Product";
+import ItemCount from "./ItemCount";
+import Product from "../utils/Product";
+import imagenes from "../assets/imagenes";
 import { useState, useEffect } from "react";
 import promiseItem from "../utils/promiseItem";
-import ItemCount from "./ItemCount";
 
-const Item =({item  }) =>{
+const ItemDetail = ({item}) =>{
 
-   
+
 
     return(
         <>
@@ -13,16 +14,17 @@ const Item =({item  }) =>{
             
             
                
-            
-                        {Item.image[2]} 
+                        {item.image} 
+                        
                        
-                            {Item.name}
+                         {item.name}
+                       
                         
                         
-                            Stock: {Item.stock}
+                            Stock: {item.stock}
                      
                        
-                            Categoria: {Item.positionID} 
+                            Categoria: {item.positionID} 
                            
                        
                     
@@ -34,9 +36,9 @@ const Item =({item  }) =>{
                     
             
         }
+        </>
         
-    )     
-        
+    );    
 }
 
-export default Item; */
+export default ItemDetail;

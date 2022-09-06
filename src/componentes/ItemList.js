@@ -31,11 +31,6 @@ const ItemList = () =>{
                                 Categoria: {Item.positionID} 
                                
                             </h5>
-                            
-                           
-                            
-                      
-                        
                     </> 
                 ))
                 }
