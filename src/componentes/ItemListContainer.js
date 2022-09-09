@@ -2,8 +2,10 @@ import Product from "../utils/Product";
 import ItemCount from "./ItemCount";
 import promiseItem from "../utils/promiseItem";
 import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import ItemDetailContainer from "./ItemDetailContainer";
 
-const ItemListContainer = (props) =>{
+const ItemListContainer = ({item}) =>{
    const [producto, setProducto] = useState([]);
    const {id} = useParams();
 
@@ -35,7 +37,7 @@ const ItemListContainer = (props) =>{
           />
         )) 
         }  
-
+      <ItemDetailContainer />
     </div>
     
     
