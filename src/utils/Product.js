@@ -9,7 +9,11 @@ const Product = [
         name: "Nike air jordan 1",
         stock: 10,
         positionID: "Jordan 1",
-
+        categoryid: 11,
+        category:{
+            name: "Air Jordan",
+            id: 11
+        },
     },
     {
         id: 2,
@@ -17,6 +21,11 @@ const Product = [
         name: "Nike air jordan low",
         stock: 4,
         positionID: "Jordan Low",
+        categoryid: 11,
+        category:{
+            name: "Air Jordan",
+            id: 11
+        },
 
     },
     {
@@ -27,6 +36,11 @@ const Product = [
         positionID: "Jordan Retro",
         description: "Unicas en estilo y onda....",
         precio: 200,
+        categoryid: 11,
+        category:{
+            name: "Air Jordan",
+            id: 11
+        },
 
     },
     {
@@ -38,6 +52,11 @@ const Product = [
         name: "Nike air force 1",
         stock: 3,
         positionID: "Force 1",
+        categoryid: 12,
+        category:{
+            name: "Air Force",
+            id:12,
+        }
     }
 ];
 
