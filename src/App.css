@@ -1,17 +1,21 @@
+*{
+  box-sizing: border-box;
+ 
+ 
+}
+
 .Header-App{
   height: 200px;
   font-size: 21px;
   font-family: sans-serif;
-  background-image: url(./assets/img/backround-header.png);
   background-attachment: fixed;
   font-family: 'Bebas Neue', cursive;
 }
 .Tittle-H2{
   text-align:center;
-  margin-top: 50px;
-  font-size: 48px;
-
+  text-decoration: none;
 }
+
 .NavBar{
   display: flex;
   height: 100px;
@@ -196,6 +200,69 @@ font-size: 50px;
 .buy{
   border: none;
   font-size: 28px;
-  border-bottom: 2px solid black;
   margin-right: 20px;
+}
+/* main rompe - inline block - margin left 175px */
+.contain{
+  text-align: center;
+  margin-top: 50px;
+  display: inline-flexbox;
+  flex-wrap:wrap;
+  padding: 10px;
+  border: 2px solid rgb(175, 82, 82);
+  border-radius: 30px;
+  width: 700px;
+  height: auto;
+  margin: 7px;
+  margin-left: 449px;
+  background-image: url(./assets/img/nice.png) ;
+  color: aliceblue;
+  font-size: 500;
+  font-family: 'Bebas Neue', cursive;
+}
+.contain img{
+  height: 200px;
+  width: auto;
+  display: inline;
+}
+
+.vermasinformacion:hover{
+  width: 100px;
+  height: auto;
+  
+}
+.navi{
+  margin: 40px 0px 0px 0px;
+  padding-left: 40px;
+  font-family: 'Bebas Neue', cursive;
+  position: static;
+ 
+  
+}
+.navi h2{
+  color: #ad4545;
+  text-decoration: none;
+  font-family: 'Bebas Neue', cursive;
+}
+.navi h3{
+  color: rgb(12, 8, 8);
+  text-decoration: none;
+  font-family: 'Bebas Neue', cursive;
+}
+.nameItem:hover{
+  background-color: black;
+}
+body{
+  background-image: url("https://wallpaper.dog/large/10714794.jpg");
+  position:absolute;
+  background-repeat: initial;
+}
+.add{
+  background-image: url('./assets/img/nice.png');
+  display: inline-block;
+  border-radius: 10%;
+  width: 500px;
+  height: auto;
+  text-align: center;
+  color: aliceblue;
 }

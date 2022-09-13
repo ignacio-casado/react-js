@@ -8,7 +8,7 @@ let promiseItem = (task) =>{
         if (verdadero){
             setTimeout(()=>{
                 resolve(task)
-            }, 2000);
+            }, 500);
         }else{
             reject("Error")
         }

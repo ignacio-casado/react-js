@@ -10,7 +10,7 @@ const ItemDetailContainer = () =>{
 
     useEffect(()=>{
         if(id){
-            promiseItem(1000, Product.filter(item=> item.id == id) )
+            promiseItem(Product.filter(item=> item.id == id) )
             .then(result => setProducto(result))
             .catch(err => console.log(err))
         }else{
@@ -18,7 +18,8 @@ const ItemDetailContainer = () =>{
             
         }
        
-    },[id])
+    },[id]);
+    
 
     return(
         <>

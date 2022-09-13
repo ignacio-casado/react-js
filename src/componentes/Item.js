@@ -1,42 +1,45 @@
-/* import Product from "../utils/Product";
+import Product from "../utils/Product";
 import { useState, useEffect } from "react";
 import promiseItem from "../utils/promiseItem";
 import ItemCount from "./ItemCount";
+import { Link } from "react-router-dom";
 
-const Item =({item  }) =>{
+const Item =({item}) =>{
 
-   
 
-    return(
+     return(
         <>
-        {
-            
-            
+      
                
             
-                        {Item.image[2]} 
-                       
-                            {Item.name}
+                      
+                      <div className="contain">
+                       <div>
+                        <img src={item.image} alt="foto" className="imgProduct"/>
+                        </div>
+                            
+                            <h3 className="nameItem">{item.name}</h3>
                         
                         
-                            Stock: {Item.stock}
+                          <p> Stock: {item.stock}</p> 
                      
                        
-                            Categoria: {Item.positionID} 
+                            <p>Categoria: {item.positionID} </p>
                            
                        
                     
-                        <button className="vermasinformacion">Ver mas informacion</button>
-                        <ItemCount />
+                        <Link to='/item/:id'><button className="vermasinformacion">Ver mas informacion</button></Link>
                         
-                
+                       </div>
+                       
                     
-                    
+                     
+                       
             
-        }
+        </>
         
-    )     
+    ) ;   
         
 }
 
-export default Item; */
+export default Item; 
