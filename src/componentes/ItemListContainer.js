@@ -37,15 +37,15 @@ const ItemListContainer = () =>{
           
         )) 
       }   
-      {/* {
-         <Link> producto.map(item =>(
+      
+      {/* { producto.map(item =>(
             <ItemDetail 
               item={item}
             />
             
-          )) </Link>
-      } */}
-         
+          )) 
+      } 
+          */}
       {/* <ItemDetailContainer /> */}
     </div>
     

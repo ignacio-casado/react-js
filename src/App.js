@@ -5,10 +5,13 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import ItemDetailContainer from "./componentes/ItemDetailContainer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Cart from "./componentes/Cart";
+import  CartContexProvider  from "./componentes/CartContext";
+
 
 const App = () =>{
 
   return(
+    <CartContexProvider>
     <BrowserRouter>
     <NavBar/> 
     <Routes>
@@ -18,6 +21,7 @@ const App = () =>{
       <Route path="/cart" element={<Cart />}/>{/* hacer */}
     </Routes>
     </BrowserRouter>
+    </CartContexProvider>
   );
   
 }

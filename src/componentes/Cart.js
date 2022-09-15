@@ -1,8 +1,20 @@
 import { Link } from "react-router-dom";
+import { useContext, useEffect } from "react";
+import { CartContex } from "./CartContext";
 
 const Cart = () =>{
-    return(<>
-  <p>Estamos en proceso de creacion, disculpe las moletias....</p>
+
+  const test = useContext(CartContex);
+  
+  useEffect(()=>{
+
+  })
+
+    return(
+    <>
+     {
+      test.cartList.map(item=><p>{item.name}</p>)
+     }
     
     
     </>
