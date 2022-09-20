@@ -5,12 +5,12 @@ import promiseItem from "../utils/promiseItem";
 import { useParams } from "react-router-dom";
 
 const ItemDetailContainer = () =>{
-    const [producto, setProducto] = useState({});
+    const [producto, setProducto] = useState([]);
     const {id} = useParams();
-
+    console.log(id)
     useEffect(()=>{
         if(id){
-            promiseItem(Product.filter(item=> item.id == id))
+            promiseItem(Product.find(item=> item.id == id))
             .then(result => setProducto(result))
             .catch(err => console.log(err))
         }else{
@@ -20,7 +20,7 @@ const ItemDetailContainer = () =>{
        
     },[id]);
     
-
+    console.log(producto)
     return(
         <>
        <ItemDetail item={producto}/>

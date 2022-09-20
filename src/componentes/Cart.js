@@ -6,16 +6,16 @@ const Cart = () =>{
 
   const test = useContext(CartContex);
   
-  useEffect(()=>{
 
-  })
 
     return(
     <>
      {
-      test.cartList.map(item=><p>{item.name}</p>)
+        test.cartList.map(item=><li className="carritoCompra">{item.name} (qty={item.qty}) <img src={item.image} alt="miniatura"/> <button className="btnEliminar" onClick={()=>test.removeItem(item.id)}>ELIMINAR</button><h4 className="preciocarr">{item.precio} usd</h4></li>)
      }
-    
+     <h3>Total =</h3>
+      <button className="btnPagar">Pagar</button>
+      <Link to='/'><button className="continue">Seguir comprando</button></Link>
     
     </>
     );

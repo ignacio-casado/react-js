@@ -6,13 +6,29 @@ import Item from "./Item";
  const CartContexProvider = ({children}) =>{
 
     const [cartList, setCartList] = useState([]);
-    const addItem = (item) =>{
-        setCartList([item])
+   /*  const addItem = (item) =>{
+        setCartList(item)
 
+    } */
+
+    const addItem = (item, qty) =>{
+
+        let itemForCart = {
+            ...item,
+            qty
+        }
+        setCartList([
+            ...cartList,
+            itemForCart
+        ])
     }
 
+    const removeItem = (id) =>{
+        let newCartList = cartList.filter(item => item.id !== id)
+        setCartList(newCartList)
+    }
     return(<>
-        <CartContex.Provider value={{cartList, addItem}}>
+        <CartContex.Provider value={{cartList, addItem, removeItem}}>
             {children}
         </CartContex.Provider>
     </>);

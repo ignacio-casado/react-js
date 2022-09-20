@@ -20,6 +20,9 @@ const NavBar = () =>{
   <a className="nav-link disabled">
   <img src="https://www.vectorkhazana.com/assets/images/products/Sneaker_Red.png" alt="Logo de la marca"  className='Logo'/> 
   </a>
+  <a className="nav-link" >
+    <Link to='/cart'><img src='https://cdn-icons-png.flaticon.com/512/107/107831.png' alt='logo' className='imagencarrito'/></Link>
+  </a>
 </nav>
 
 

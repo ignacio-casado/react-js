@@ -266,3 +266,53 @@ body{
   text-align: center;
   color: aliceblue;
 }
+.carritoCompra{
+  font-family: 'Bebas Neue', cursive;
+  color: aliceblue;
+  font-size: 20px;
+  height: 50px;
+  font-size: xx-large;
+  padding-bottom: 50px;
+  display:inline;
+
+}
+.carritoCompra img {
+  width: 100px;
+  height: auto;
+}
+
+.btnEliminar{
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: aliceblue;
+  color: black;
+  font-family: 'Bebas Neue', cursive;
+}
+.imagencarrito{
+  width: 60px;
+  height: auto;
+}
+.preciocarr h4{
+  
+  margin-left: 50px;
+
+}
+.btnPagar{
+  text-decoration: none;
+  font-size:x-large;
+  border-radius: 4px;
+  background-color: aliceblue;
+  color: black;
+  font-family: 'Bebas Neue', cursive;
+  margin-left: 772px;
+}
+.continue{
+  text-decoration: none;
+  font-size:x-large;
+  border-radius: 4px;
+  background-color: aliceblue;
+  color: black;
+  font-family: 'Bebas Neue', cursive;
+  margin-left: 772px;
+  margin-top: 40px;
+}

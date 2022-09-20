@@ -28,7 +28,7 @@ const Item =({item}) =>{
                            
                        
                     
-                        <Link to='/item/:id'><button className="vermasinformacion">Ver mas informacion</button></Link>
+                        <Link to={`/item/${item.id}`}><button className="vermasinformacion">Ver mas informacion</button></Link>
                         
                        </div>
                        
