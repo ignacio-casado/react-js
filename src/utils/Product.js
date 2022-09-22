@@ -1,4 +1,3 @@
- import imagenes from "../assets/imagenes"; 
 
 
 
@@ -13,7 +12,7 @@ const Product = [
         description: "Unicas en estilo y onda....",
         categoryid: 11,
         category:{
-            namese: "Air Jordan",
+            name: "Air Jordan",
             id: 11,
         },
     },
@@ -103,4 +102,4 @@ const Product = [
 ];
 
 
-export default Product;
+export default Product; 

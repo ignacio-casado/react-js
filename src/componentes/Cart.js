@@ -7,7 +7,6 @@ const Cart = () =>{
   const test = useContext(CartContex);
   
 
-
     return(
     <>
      {

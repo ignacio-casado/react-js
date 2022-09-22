@@ -1,28 +1,22 @@
-import Product from "../utils/Product";
+
 import ItemCount from "./ItemCount";
-import promiseItem from "../utils/promiseItem";
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Item from "./Item";
-import ItemDetail from "./ItemDetail";
+
+
+import { firebaseFetch } from "../utils/FireBaseConfig"
 
 const ItemListContainer = () =>{
    const [producto, setProducto] = useState([]);
-   const {id} = useParams();
+   const {idcategory} = useParams();
 
     useEffect(()=>{
-      if(id){
-         promiseItem( Product.filter(item => item.categoryid == id))
-         .then(result => setProducto(result))
-         .catch(err => console.log(err))
-      }else{
-         promiseItem(Product)
-         .then(result => setProducto(result))
-         .catch(err => console.log(err))
-      }
-       
-    },[id])
-    console.log(producto)
+      
+      firebaseFetch(idcategory)
+        .then(result => setProducto(result))
+
+    },[producto])
     
  return(
     <>
