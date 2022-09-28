@@ -3,21 +3,15 @@ import Product from "../utils/Product";
 import { useState, useEffect } from "react";
 import promiseItem from "../utils/promiseItem";
 import { useParams } from "react-router-dom";
-
+import { firebaseDos } from "../utils/FireBaseConfig";
 const ItemDetailContainer = () =>{
     const [producto, setProducto] = useState([]);
     const {id} = useParams();
-    console.log(id)
+ /*    console.log(id) */
     useEffect(()=>{
-        if(id){
-            promiseItem(Product.find(item=> item.id == id))
+        firebaseDos(id)
             .then(result => setProducto(result))
             .catch(err => console.log(err))
-        }else{
-            console.log("err")
-            
-        }
-       
     },[id]);
     
     console.log(producto)

@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getFirestore } from 'firebase/firestore';
-import { collection, getDocs, query, where } from "firebase/firestore";
+import { collection, getDocs, query, where, doc, getDoc } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -36,16 +36,17 @@ export const firebaseFetch = async (idcategory) =>{
     return dataFromFirestore
   }
 
+
 //un solo producto
-/* export const firebaseDos = async () =>{
-    const docRef = doc(db, "products", "SF");
+ export const firebaseDos = async (id) =>{
+    const docRef = doc(db, "products", id);
     const docSnap = await getDoc(docRef);
     
     if (docSnap.exists()) {
-      console.log("Document data:", docSnap.data());
+     return{id: docSnap.id, ...docSnap.data()}
     } else {
       // doc.data() will be undefined in this case
       console.log("No such document!");
     }
-    return firebaseDos
-} */
+    
+} 
