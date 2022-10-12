@@ -6,7 +6,7 @@ import ItemDetail from "./ItemDetail";
 
 const ItemCount = ({stock =0, initial = 1, onAdd}) =>{
 
-   
+
     const [count, setCount] = useState(0)
     useEffect(()=>{
         setCount(initial);
@@ -23,8 +23,9 @@ const ItemCount = ({stock =0, initial = 1, onAdd}) =>{
             setCount(count - 1);
         }
     }
-    console.log(increment)
-    console.log(decrement)
+    
+    console.log(onAdd)
+
     return(
         <>
         
@@ -33,9 +34,9 @@ const ItemCount = ({stock =0, initial = 1, onAdd}) =>{
                      <Link to='/cart'><button className="buy" onClick={()=>onAdd(count)}>Agregar al carrito</button></Link>
                         <button className="btnRestar" /* disabled={carrito < 1} */ onClick={decrement}>-</button> 
                        <p className="carritoAdd"> Agregado al carrito: {count}</p>
-                        
+                       
                     </div>
-                    
+                   
         </>
     );
 }

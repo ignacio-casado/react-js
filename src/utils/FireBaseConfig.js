@@ -18,12 +18,12 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
-export const firebaseFetch = async (idcategory) =>{
+export const firebaseFetch = async (id) =>{
     let q;
   
-    if(idcategory){
+    if(id){
         
-        q = query(collection(db, "products"), where ('categoryid', '==', idcategory));
+        q = query(collection(db, "products"), where ('categoryId', '==', id));
     }else{
        
         q = query(collection(db, "products"));

@@ -5,19 +5,19 @@ import { useState, useEffect, useContext } from "react";
 import ItemCount from "./ItemCount";
 import { CartContex } from "./CartContext";
 /* import { firebaseDos } from "../utils/FireBaseConfig"; */
-/* import {useContext } from "react"; */
+/*  import { useContext } from "react";  */
 
 const ItemDetail = ({item}) =>{
 
     const [itemCount, setItemCount] = useState(0)
-    const [uni, setUni] = useState({})
+/*     const [uni, setUni] = useState({}) */
     const test = useContext(CartContex);
     
     const onAdd = (qty)=>{
         setItemCount(qty);
         test.addItem(item);
     }
-    
+
    /*  useEffect(()=>{
         firebaseDos()
             .then(result=> setUni(result))
